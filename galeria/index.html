@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rzeczy całkiem zwyczajne</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="page">
+  <div class="card">
+
+    <header class="site-header">
+      <span class="site-title">Rzeczy całkiem zwyczajne</span>
+      <nav class="site-nav">
+        <a href="/" class="">Wpisy</a>
+        <a href="/galeria/" class="nav-active">Galeria</a>
+      </nav>
+    </header>
+    <div class="rule"></div>
+
+    
+    <div class="gallery-section">
+      <div class="gallery-label">Galeria</div>
+      <div class="gallery-grid">
+        
+        <img src="/photos/thumb/18-07-26__DSC4993_Zielony.jpg" data-full="/photos/full/18-07-26__DSC4993_Zielony.jpg" onclick="openLightbox(this)">
+        
+        <img src="/photos/thumb/19-07-26__DSC5142_Zielony.jpg" data-full="/photos/full/19-07-26__DSC5142_Zielony.jpg" onclick="openLightbox(this)">
+        
+        <img src="/photos/thumb/19-07-26__DSC5166_Zielony.jpg" data-full="/photos/full/19-07-26__DSC5166_Zielony.jpg" onclick="openLightbox(this)">
+        
+      </div>
+    </div>
+
+
+    <footer class="site-footer">
+      <p>Rzeczy całkiem zwyczajne · <a href="mailto:tomasz.tomanek@gmail.com">tomasz.tomanek@gmail.com</a></p>
+    </footer>
+
+  </div>
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" onclick="event.stopPropagation()">
+  <div class="lightbox-close" onclick="closeLightbox()">&times;</div>
+</div>
+
+<script src="/gallery.js"></script>
+</body>
+</html>

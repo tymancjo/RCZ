@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rzeczy całkiem zwyczajne</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="page">
+  <div class="card">
+
+    <header class="site-header">
+      <span class="site-title">Rzeczy całkiem zwyczajne</span>
+      <nav class="site-nav">
+        <a href="/" class="nav-active">Wpisy</a>
+        <a href="/galeria/" class="">Galeria</a>
+      </nav>
+    </header>
+    <div class="rule"></div>
+
+    
+    <main class="entries">
+      
+      <article class="entry">
+        <div class="entry-date">Lipiec 21 — Dzień dobry z gór</div>
+        <div class="entry-body">
+          <p><img class="entry-photo entry-photo-right" src="/photos/thumb/18-07-26__DSC4993_Zielony.jpg" data-full="/photos/full/18-07-26__DSC4993_Zielony.jpg" alt="Wracając" onclick="openLightbox(this)"></p>
+<p>To ciekawe, jak czasem lądujemy w miejscach zupełnie nie planowanych. Bo tak niesie nas świat. </p>
+<p>Lądując gdzies tam na południowych rubieżach Beskidów mogliśmy się cieszyć dniem dość szalonej pogody przepełnionej nieokiełznana zielenią. </p>
+<p><img class="entry-photo entry-photo-left" src="/photos/thumb/19-07-26__DSC5142_Zielony.jpg" data-full="/photos/full/19-07-26__DSC5142_Zielony.jpg" alt="" onclick="openLightbox(this)"></p>
+<p><img class="entry-photo entry-photo-right" src="/photos/thumb/19-07-26__DSC5166_Zielony.jpg" data-full="/photos/full/19-07-26__DSC5166_Zielony.jpg" alt="" onclick="openLightbox(this)"></p>
+        </div>
+      </article>
+      
+    </main>
+
+    
+
+
+    <footer class="site-footer">
+      <p>Rzeczy całkiem zwyczajne · <a href="mailto:tomasz.tomanek@gmail.com">tomasz.tomanek@gmail.com</a></p>
+    </footer>
+
+  </div>
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" onclick="event.stopPropagation()">
+  <div class="lightbox-close" onclick="closeLightbox()">&times;</div>
+</div>
+
+<script src="/gallery.js"></script>
+</body>
+</html>

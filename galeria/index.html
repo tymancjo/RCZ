@@ -26,6 +26,12 @@
       <div class="gallery-label">Galeria</div>
       <div class="gallery-grid">
         
+        <img src="/photos/thumb/13-07-26_19-32-42_DSC_4167_NIKON D700_Zielony.jpg" data-full="/photos/full/13-07-26_19-32-42_DSC_4167_NIKON D700_Zielony.jpg" onclick="openLightbox(this)">
+        
+        <img src="/photos/thumb/13-07-26_19-29-04_DSC_4158_NIKON D700_Zielony.jpg" data-full="/photos/full/13-07-26_19-29-04_DSC_4158_NIKON D700_Zielony.jpg" onclick="openLightbox(this)">
+        
+        <img src="/photos/thumb/13-07-26_19-25-54_DSC_4150_NIKON D700_Zielony.jpg" data-full="/photos/full/13-07-26_19-25-54_DSC_4150_NIKON D700_Zielony.jpg" onclick="openLightbox(this)">
+        
         <img src="/photos/thumb/18-07-26__DSC4993_Zielony.jpg" data-full="/photos/full/18-07-26__DSC4993_Zielony.jpg" onclick="openLightbox(this)">
         
         <img src="/photos/thumb/19-07-26__DSC5142_Zielony.jpg" data-full="/photos/full/19-07-26__DSC5142_Zielony.jpg" onclick="openLightbox(this)">
@@ -44,7 +50,9 @@
 </div>
 
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <div class="lightbox-prev" onclick="event.stopPropagation(); lightboxPrev()">&#8249;</div>
   <img id="lightbox-img" onclick="event.stopPropagation()">
+  <div class="lightbox-next" onclick="event.stopPropagation(); lightboxNext()">&#8250;</div>
   <div class="lightbox-close" onclick="closeLightbox()">&times;</div>
 </div>
 
